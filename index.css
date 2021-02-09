@@ -1,0 +1,60 @@
+.container {
+    margin-top: 1em;
+}
+
+.new-book {
+    border-bottom: rgb(190, 190, 190) solid 0.5px;
+    border-top: rgb(190, 190, 190) solid 0.5px;
+    padding: 0.5em;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.new-book:hover {
+    border-bottom: black solid 0.5px;
+    border-top: black solid 0.5px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+}
+
+.btn {
+    border-radius: 5em;
+    border: rgb(190, 190, 190) solid 1px;
+    -webkit-transition: background-color .45s ease-out;
+    -moz-transition: background-color .45s ease-out;
+    -o-transition: background-color .45s ease-out;
+    transition: background-color .45s ease-out;
+}
+
+.read {
+    cursor: pointer;
+}
+
+.read:hover {
+    background-color: #ffffbb;
+}
+
+.btn-del {
+    border-color: rgb(190, 190, 190);
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+.btn:hover {
+    background-color:darkcyan;
+    color: ghostwhite;
+}
+
+.btn-del:hover {
+    background-color: #f0506e;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.table-container {
+    margin-top: 3em;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Library</title>
+    <!-- UIkit CSS and Personal Adjusment -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.14/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./index.css">
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.14/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.14/dist/js/uikit-icons.min.js"></script>
+
+    
+</head>
+<body>
+    <!--
+        Required :
+        1. A Form to add a new book
+        2. A div to display the list of previously add book
+            2.a. a button to edit the information on each book
+            2.b. a button to delete the book information as a whole
+    -->
+    <div class="uk-flex uk-flex-around">
+        <h1 class="uk-heading-small">Welcome to Your Personal Library Records</h1>
+    </div>
+    <div  class="uk-container">
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title new-book" href="#">New Book</a>
+                <div class="container uk-container uk-accordion-content">
+                    <form name="form" class="uk-form-stacked uk-grid form">
+                    
+                        <div class="uk-width-1-5">
+                            <label class="uk-form-label" for="form-stacked-text">Title</label>
+                            <div class="uk-form-controls">
+                                <input name="title" class="uk-input uk-form-width-large" id="form-stacked-text" type="text" placeholder="What's the book called?">
+                            </div>
+                        </div>
+                
+                        <div class="uk-width-1-5">
+                            <label class="uk-form-label" for="form-stacked-text">Author</label>
+                            <div class="uk-form-controls">
+                                <input name="author" class="uk-input uk-form-width-large" id="form-stacked-text" type="text" placeholder="Who wrote the book?">
+                            </div>
+                        </div>
+                
+                        <div class="uk-width-1-5">
+                            <label class="uk-form-label" for="form-stacked-text">Page Count</label>
+                            <div class="uk-form-controls">
+                                <input name="page" class="uk-input uk-form-width-large" id="form-stacked-text" type="number" placeholder="How many pages is it?">
+                            </div>
+                        </div>
+                    
+                        <div class="uk-width-1-5">
+                            <label class="uk-form-label" for="form-stacked-select">Reading Progress</label>
+                            <div class="uk-form-controls">
+                                <select name="read" class="uk-select" id="form-stacked-select">
+                                    <option>Not Yet Started</option>
+                                    <option>Started</option>
+                                    <option>Finished</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="uk-width-1-5 uk-flex uk-flex-bottom">
+                            <input type="submit" class="btn uk-button uk-button-default"></input>
+                        </div>
+                    
+                    </form>    
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="table-container uk-container container">
+        <table class="uk-table uk-table-hover uk-table-divider">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page Count</th>
+                    <th>Read Progress</th>
+                    <th>Remove Book</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
